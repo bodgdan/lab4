@@ -1,5 +1,20 @@
-### Run this script in your cmd to create an aws instance:
-aws ec2 run-instances --image-id ami-053b0d53c279acc90 --count 1 --instance-type t2.micro --key-name devops_key --security-group-ids sg-0807e541176cec6f3 --subnet-id subnet-0f597f2c6d470ed6a --user-data file://script.sh
+### Run "run_instance.cmd" to run inctance in aws
 
-### SSH connect to instance:
+### SSH connect to instance or copy from aws :
 ssh -i "path_to_your_keys.pem" ubuntu@instance-ip
+
+### Run "sudo -i"
+
+### Run "cd /etc"
+
+### We can check info about users by using "vim passwd", "vim shadow", "vim group"
+
+### Login into poweruser "su adminuser" (password: 12345)
+
+### To exit run "exit" 
+
+### Login into poweruser "su poweruser"
+
+### To check softlink run "ls -la /home/poweruser"
+
+### To check iptables command in poweruser "sudo iptables -L"
